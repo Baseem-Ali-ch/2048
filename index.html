@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048</title>
+  <link rel="icon" href="2048 image.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="box1">
+      <div class="scoreTitle">2048</div>
+    </div>
+    <div class="box2">
+      <div class="scoreContainer">
+        <div class="scoreTitle">score</div>
+        <span id="score">0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="grid"></div>
+
+    <div class="aside">
+      <div class="menu">
+        <button class="menu-button" onclick="restart()">RESTART</button>
+        <button class="menu-button" onclick="howToPlay()">How to play</button>
+        <button class="menu-button">Challenges</button>
+        <button class="menu-button" onclick="ratings()">Ratings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- popup messages -->
+  <div id="popup" class="popup-container">
+    <div class="popup-content">
+      <h2>2048</h2>
+      <p><strong>Swipe</strong> to move the tiles. When two tiles with the same number touch, they merge into one!</p>
+      <button class="ok-button" onclick="closePopup()">ok</button>
+    </div>
+  </div>
+  <div id="popupForRate" class="popup-container">
+    <div class="popup-content">
+      <h2>2048</h2>
+      <p><strong>Rate </strong>for us</p>
+      <button class="ok-button" onclick="closePopupRating()">ok</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
